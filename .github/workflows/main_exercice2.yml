@@ -31,9 +31,6 @@ jobs:
         run: pip install -r requirements.txt
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
-      - name: launch test
-        run: |
-          pytest test/test_routes.py
       
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
@@ -63,4 +60,4 @@ jobs:
         with:
           app-name: 'exercice2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1CFA347D5459406AAC97258348223D32 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_35BA2737A2EC4C7781EC8E7C5102C04B }}
