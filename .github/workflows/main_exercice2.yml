@@ -33,7 +33,7 @@ jobs:
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       - name: Install dependencies
-        run: pytest /test/*.py
+        run: pytest test/test_routes.py
         
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
